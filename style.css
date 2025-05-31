@@ -1,20 +1,35 @@
 body {
-  background-color: #fff0f5;
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
+#video-fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.conteudo {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
 }
 
 img {
   width: 300px;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
   transition: transform 0.3s;
 }
 
