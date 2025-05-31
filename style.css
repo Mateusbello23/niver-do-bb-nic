@@ -1,39 +1,26 @@
-body {
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  font-family: Arial, sans-serif;
-}
-
-#video-fundo {
+#video-background {
   position: fixed;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+  object-fit: cover;
 }
-
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
 }
-
-.conteudo {
+.mensagem {
   position: relative;
   z-index: 1;
-  text-align: center;
   color: white;
-  padding-top: 50px;
+  text-align: center;
+  margin-top: 20vh;
 }
-
-img {
-  width: 300px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
-  transition: transform 0.3s;
-}
-
 img:hover {
   transform: scale(1.05);
 }
